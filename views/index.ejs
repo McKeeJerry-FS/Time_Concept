@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <head>
-	<title>EJS Example</title>
+	<title>ZipCode to Time Zone Demo</title>
 </head>
 
 <body>
 	<h1 style="color: green;">ZipCode to Timezone</h1>
 	<h3>Enter in a zipCode and get its corresponding Timezone</h3>
-	<form action="/greet" method="post">
-		<label for="name">Enter a zipcode:</label>
+	<form action="/convert" method="post">
+		<label for="zip">Enter a zipcode:</label>
 		<input type="text" id="zip" name="zip" required>
 		<button type="submit">Submit</button>
 	</form>
 	<% if (greeting) { %>
+        <h3><%= dec %></h3>
 		<p><%= greeting %></p>
 	<% } %>
 </body>
